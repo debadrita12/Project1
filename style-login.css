@@ -1,0 +1,125 @@
+#login-container{
+	
+	padding: 5em 0 5em;
+	background-image: url(abcd.webp);
+    background-size: cover;
+
+}
+.container >h2{
+	padding: 1em 0 .5em;
+	margin: 0;
+	width: 100%;
+	color:#0D8BDE;
+	font-size: 2em;
+	width: 35%;
+	text-align: center;
+	margin-left: 30%;
+	background-color:#17202A ;
+	border-radius: 20px  ;
+	text-transform: uppercase; 
+}
+.container .row1{
+	position: relative;
+	display: grid;
+	margin-left: 30%;
+	width: 35%;
+	grid-template-columns: auto;
+	background-color:#17202A;
+	border-radius: 20px ;
+}
+.col{
+	position: relative;
+	width: 100%;
+	margin: 20px 0 20px;
+}
+.inputbox{
+	position: relative;
+	width: 70%;
+	margin:  0 14% 0;
+	color:#0D8BDE ;
+	height: 2.2em;
+}
+.inputbox input{
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-left:5px;
+	margin: 0;
+	font-size: 1.1em;
+	border: none;
+	outline: none;
+	transition: .5s;
+	background: transparent;
+	z-index: 1;
+	color: #EAEDED;
+}
+.inputbox .text{
+	letter-spacing: 2px;
+	transition: .5s;
+	position: absolute;
+	bottom: 2px;
+	left: 5px;
+	line-height: 1em;
+	font-size: 1.2em;
+}
+.line{
+	position: absolute;
+	display:block;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	border-radius: 10px;
+	transition: .5s;
+	background-color: #0D8BDE ;
+	opacity: .3
+	
+	
+}
+.inputbox input:focus +.text,
+.inputbox input:valid +.text
+{
+	bottom:100%;
+	left:0px;
+	
+}
+.inputbox input:focus ~.line,
+.inputbox input:valid ~.line
+{
+	height: 90%;
+	
+}
+
+.row1 >a{
+	margin: 0 5em .5em;
+	padding: .1em;
+	text-decoration: none;
+	text-align: center; 
+	text-transform: uppercase;
+	color:#0D8BDE; 
+	border-radius: 10px;
+	word-spacing: 2px;
+	border:1px solid #0D8BDE;
+}
+.row1 a:hover{
+	background-color: #0D8BDE;
+	color: #EAEDED;
+	border:1px solid #EAEDED;
+}
+
+.login-btn {
+	margin: 1em 5em 1.3em;
+	padding: 0;
+	text-align: center; 
+}
+.login-btn a{
+	border-radius: 10px;
+	word-spacing: .2em;
+	letter-spacing: .1em;
+	border:1px solid #0D8BDE;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#0D8BDE; 
+	padding: .3em;
+}
+
